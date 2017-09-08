@@ -25,10 +25,10 @@ Generic account informations contain all basic informations related to the ident
 | Surname            | String        | Last name or equivalent  |
 | Photo              | URL to PNG    | Official user picture |
 | Display Name       | String        | Name to show in most display field (system UI, mail sender's description, etc.)  |
-| Short Name         | String        | A really short name for quick access and home folder (like a trichar or generated identifier). Must be unique  |
-| Principal Name     | String        | In a form of an e-mail, address, should be use as the common login name for most services. Domain name used should be dedicated to the IT services and be different from the e-mail domain (like user@corp.example.com) |
-| Numeric Unique ID  | Integer       | An incremental numeric ID starting from 1789 here for system who need id. Modern software should not use this kind of ID |
-| Globally Unique ID | String        | An UUID used as globally unique ID that should be used by every software nowadays to uniquely identify an identity |
+| Short Name         | String        | A really short name for quick access and home folder (like a trichar or generated identifier). Must be unique across users and groups. |
+| Principal Name     | String        | In a form of an e-mail, address, should be use as the common login name for most services. Domain name used should be dedicated to the IT services and be different from the e-mail domain (like user@corp.example.com). Must be unique across users and groups. |
+| Numeric Unique ID  | Integer       | An incremental numeric ID starting from 1789 here for system who need id. Modern software should not use this kind of ID. Must be unique. |
+| Globally Unique ID | String        | An UUID used as globally unique ID that should be used by every software nowadays to uniquely identify an identity. Must be unique. |
 | Creation Date      | Date          | Date of initial account creation |
 | Modification Date  | Date          | Date of last account change |
 | Deactivation Date  | Date          | After this date, accounts are inaccessible. Deactivated account has this field set to January First, 1970 |

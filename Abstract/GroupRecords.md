@@ -22,14 +22,14 @@ Generic group informations contain all basic informations related to the group i
 
 |    Information     |     Nature    |     Usage     |
 | ------------------ | ------------- | ------------- |
-| Common Name        | String        | Common name for the group  |
-| Description        | String        | Description for this group  |
+| Common Name        | String        | Common name for the group. Must be unique. |
+| Description        | String        | Description for this group. |
 | Photo              | URL to PNG    | Official group picture |
-| Short Name         | String        | A really short name for quick access, could be used for the e-mail too. Must be unique across users and groups |
-| Principal Name     | String        | In a form of an e-mail, address, should be use as the common ID for most services. Domain name used should be dedicated to the IT services and be different from the e-mail domain (like group@corp.example.com). It's recommended to use the shortname as ID. |
+| Short Name         | String        | A really short name for quick access, could be used for the e-mail too. Must be unique across users and groups. |
+| Principal Name     | String        | In a form of an e-mail, address, should be use as the common ID for most services. Domain name used should be dedicated to the IT services and be different from the e-mail domain (like group@corp.example.com). It's recommended to use the shortname as ID. Must be unique across users and groups. |
 | E-mail             | String        | E-mail address used as mailling list for this group. |
-| Numeric Unique ID  | Integer       | An incremental numeric ID starting from 1789 here for system who need id. Modern software should not use this kind of ID |
-| Globally Unique ID | String        | An UUID used as globally unique ID that should be used by every software nowadays to uniquely identify an identity |
+| Numeric Unique ID  | Integer       | An incremental numeric ID starting from 1789 here for system who need id. Modern software should not use this kind of ID. Must be unique. |
+| Globally Unique ID | String        | An UUID used as globally unique ID that should be used by every software nowadays to uniquely identify an identity. Must be unique. |
 | Creation Date      | Date          | Date of initial account creation |
 | Modification Date  | Date          | Date of last account change |
 
